@@ -17,7 +17,7 @@ if(dt_atual > dt_evento)
 }
 else
 {
-    evento.push(dt_evento.toLocaleDateString()); //Adiciona a data no formato local dd/mm/aaaa ao evento
+    evento.push(dt_evento.toLocaleDateString("pt-BR")); //Adiciona a data no formato local dd/mm/aaaa ao evento
     listaEventos.push(evento);
     console.log("Evento cadastrado com sucesso!");
 }
