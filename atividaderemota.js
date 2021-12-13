@@ -1,12 +1,14 @@
 /* CADASTRO DE EVENTOS */
 console.log("Funcionalidade cadastro de eventos");
 
-let evento = ["Show de Rock","Titãs"];
 let listaEventos = [[]];
 if(listaEventos == "") //Se o primeiro evento for vazio, o apaga
 {
     listaEventos.pop();
 }
+indexEvento = listaEventos.length;
+let evento = [indexEvento,"Show de Rock","Titãs"];
+
 
 var dt_evento = new Date("January 3, 2022"); //DATA PREVISTA PARA O EVENTO
 var dt_atual = new Date(); //DATA ATUAL
@@ -22,15 +24,16 @@ else
     console.log("Evento cadastrado com sucesso!");
 }
 console.log("Lista de eventos:");
+console.log("Índice - Descrição - Responsável - Data");
 console.log(listaEventos);
 
 /* CADASTRO DE PARTICIPANTES */
 console.log("Funcionalidade de cadastro de participantes");
-
-let participante = ["Sebastião Mundi","07/10/2001"];
-let listaParticipantes = [["Marvin Marciano","01/01/1948"],["Mônica Suzuki","14/11/1977"],["Eduardo Camelo","27/02/1978"]];
-
-let dt_nasc = new Date(participante[1]);
+console.log("Índice - Nome - Nascimento - Evento");
+let listaParticipantes = [[0,"Marvin Marciano","01/01/1948",0],[1,"Mônica Suzuki","14/11/1977",0],[2,"Eduardo Camelo","27/02/1978",0]];
+indexParticipantes = listaParticipantes.length;
+let participante = [indexParticipantes,"Sebastião Mundi","07/10/2001",0];
+let dt_nasc = new Date(participante[2]);
 var idade = ((dt_atual-dt_nasc)/31557600000); //Converte de milisegundos para anos
 //console.log(idade);
 
