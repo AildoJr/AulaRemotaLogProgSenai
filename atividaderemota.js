@@ -29,7 +29,6 @@ console.log(listaEventos);
 
 /* CADASTRO DE PARTICIPANTES */
 console.log("Funcionalidade de cadastro de participantes");
-console.log("Índice - Nome - Nascimento - Evento");
 let listaParticipantes = [[0,"Marvin Marciano","01/01/1948",0],[1,"Mônica Suzuki","14/11/1977",0],[2,"Eduardo Camelo","27/02/1978",0]];
 indexParticipantes = listaParticipantes.length;
 let participante = [indexParticipantes,"Sebastião Mundi","07/10/2001",0];
@@ -55,4 +54,5 @@ else
 }
 
 console.log("Lista de Participantes:");
+console.log("Índice - Nome - Nascimento - Evento");
 console.log(listaParticipantes);
